@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>silicing PlantShop</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="brand">Plant<span>Shop</span></div>
+            <ul class="navs">
+                <li class="nav"><a href="#" class="active">Home</a></li>
+                <li class="nav"><a href="#">Service</a></li>
+                <li class="nav"><a href="#">Product</a></li>
+                <li class="nav"><a href="#">Testimoni</a></li>
+                <li class="nav"><a href="#">Contact</a></li>
+            </ul>
+            <div class="icons">
+                <i class='bx bx-search-alt-2'></i>
+                <i class='bx bxs-shopping-bag'></i>
+                <i class='bx bx-user' ></i>
+            </div>
+        </header>
+
+        <section class="slider-header">
+                <div class="content-left">
+                    <h1 class="header-content">More Cozy, More Fresh
+                        Environment</h1>
+                    <p class="subHeader-content">
+                        Make your room cooler and more comfortable with 
+                        a variety of ornamental plants arranged in your room
+                    </p>
+                    <a href="" class="btn-left">Explore Now</a>
+                    <a href="" class="btn-right">Learn More</a>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper content-right">
+                        <div class="swiper-slide"> <img src="assets/img/home1.png" alt="plant"></div>
+                        <div class="swiper-slide"><img src="assets/img/home2.png" alt="plant"></div>
+                        <div class="swiper-slide"><img src="assets/img/home3.png" alt="plant"></div>
+                        <div class="swiper-slide"><img src="assets/img/home4.png" alt="plant"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+        </section>
+
+        <section class="services">
+            <div class="service-1">
+                <i class='bx bx-cart' ></i>
+                <div class="content">
+                    <h3 class="header-content">
+                        Free Delivery
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima repellat fugiat tenetur sed magni sunt!</p>
+                </div>
+              
+            </div>
+            <div class="service-2">
+                <i class='bx bxs-wallet'></i>
+                <div class="content">
+                    <h3 class="header-content">
+                        Easy Payment
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima repellat fugiat tenetur sed magni sunt!</p>
+                </div>
+            </div>
+            <div class="service-3">
+                <i class='bx bxs-leaf' ></i>
+                <div class="content">
+                    <h3 class="header-content">
+                        Fresh Nature
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima repellat fugiat tenetur sed magni sunt!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="galerys">
+            <p class="subHeading-galery">WHAT WE SERVE</p>
+            <h1 class="heading-galery">We provide quality plants and maintained care</h1>
+            <div class="galery">
+                <div class="galery-1">
+                    <img src="assets/img/service2.png" alt="">
+                    <span>alathea lutea</span>
+                </div>
+                <div class="galery-2">
+                    <img src="assets/img/service2.png" alt="">
+                    <span>alathea lutea</span>
+                </div>
+                <div class="galery-3">
+                    <img src="assets/img/service3.png" alt="">
+                    <span>alathea lutea</span>
+                </div>
+                <div class="galery-4">
+                    <img src="assets/img/service4.png" alt="">
+                    <span>alathea lutea</span>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+          },
+        });
+      </script>
+</body>
+</html>

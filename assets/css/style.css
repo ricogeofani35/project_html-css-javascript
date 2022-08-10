@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #eee;
+  margin: 50px 200px;
+}
+
+.container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.container .header .brand {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: rgb(30, 111, 92);
+  font-size: 1.875rem;
+}
+.container .header span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: rgb(236, 231, 180);
+  font-size: 1.875rem;
+}
+.container .header .navs {
+  display: flex;
+  gap: 50px;
+}
+.container .header .navs a {
+  color: #4a4a4a;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+.container .header .navs .active {
+  color: rgb(30, 111, 92);
+}
+.container .header .icons {
+  display: flex;
+  gap: 50px;
+}
+.container .header .icons i {
+  color: rgb(30, 111, 92);
+  font-size: 1.5rem;
+}
+.container .slider-header {
+  background-color: rgb(30, 111, 92);
+  border-radius: 20px;
+  padding: 50px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .slider-header .content-left .header-content {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 3.125rem;
+  color: rgb(236, 231, 180);
+}
+.container .slider-header .content-left .subHeader-content {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  color: #eee;
+  max-width: 60%;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.container .slider-header .content-left .btn-left, .container .slider-header .content-left .btn-right {
+  width: 170px;
+  height: 55px;
+  border: 2px solid rgb(230, 221, 59);
+  padding: 16px 24px;
+  border-radius: 10px;
+  color: rgb(230, 221, 59);
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+.container .slider-header .content-left .btn-left {
+  color: rgb(30, 111, 92);
+  background-color: rgb(230, 221, 59);
+  margin-right: 50px;
+}
+.container .slider-header .swiper .content-right {
+  max-width: 800px;
+}
+.container .services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 200px;
+  gap: 50px;
+}
+.container .services .service-1, .container .services .service-2, .container .services .service-3 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.container .services .service-1 i, .container .services .service-2 i, .container .services .service-3 i {
+  background-color: rgb(30, 111, 92);
+  padding: 20px;
+  font-size: 2.5rem;
+  color: #fff;
+  border-radius: 30px 0 30px 0;
+}
+.container .services .service-1 .content .header-content, .container .services .service-2 .content .header-content, .container .services .service-3 .content .header-content {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.563rem;
+  margin-bottom: 10px;
+}
+.container .services .service-1 .content p, .container .services .service-2 .content p, .container .services .service-3 .content p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #4a4a4a;
+  font-size: 16px;
+}
+.container .galerys {
+  margin-top: 200px;
+}
+.container .galerys .subHeading-galery {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  color: rgb(30, 111, 92);
+}
+.container .galerys .heading-galery {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.875rem;
+}
+.container .galerys .galery {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+.container .galerys .galery .galery-1, .container .galerys .galery .galery-2, .container .galerys .galery .galery-3, .container .galerys .galery .galery-4 {
+  position: relative;
+  background-color: orange;
+}
+.container .galerys .galery .galery-1 span, .container .galerys .galery .galery-2 span, .container .galerys .galery .galery-3 span, .container .galerys .galery .galery-4 span {
+  position: absolute;
+  background-color: rgb(30, 111, 92);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 1.563rem;
+  border-radius: 10px;
+}
+.container .galerys .galery .galery-1 span:hover, .container .galerys .galery .galery-2 span:hover, .container .galerys .galery .galery-3 span:hover, .container .galerys .galery .galery-4 span:hover {
+  opacity: 0.5;
+  filter: blur(3px);
+}/*# sourceMappingURL=style.css.map */
