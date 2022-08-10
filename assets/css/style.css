@@ -91,6 +91,8 @@ body {
 }
 .container .slider-header .swiper .content-right {
   max-width: 800px;
+  padding-bottom: 50px;
+  text-align: center;
 }
 .container .services {
   display: flex;
@@ -141,14 +143,15 @@ body {
 }
 .container .galerys .galery {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   justify-content: center;
   margin-top: 100px;
   flex-wrap: wrap;
 }
 .container .galerys .galery .galery-1, .container .galerys .galery .galery-2, .container .galerys .galery .galery-3, .container .galerys .galery .galery-4 {
   position: relative;
-  background-color: orange;
+  box-shadow: 1px 1px 10px #4a4a4a;
+  border-radius: 10px;
 }
 .container .galerys .galery .galery-1 span, .container .galerys .galery .galery-2 span, .container .galerys .galery .galery-3 span, .container .galerys .galery .galery-4 span {
   position: absolute;
@@ -165,8 +168,10 @@ body {
   font-weight: 800;
   font-size: 1.563rem;
   border-radius: 10px;
+  color: rgb(236, 231, 180);
 }
 .container .galerys .galery .galery-1 span:hover, .container .galerys .galery .galery-2 span:hover, .container .galerys .galery .galery-3 span:hover, .container .galerys .galery .galery-4 span:hover {
-  opacity: 0.5;
-  filter: blur(3px);
+  opacity: 0.7;
+  -webkit-backdrop-filter: blur(13px);
+          backdrop-filter: blur(13px);
 }/*# sourceMappingURL=style.css.map */
