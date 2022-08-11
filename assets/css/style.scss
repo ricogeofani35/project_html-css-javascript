@@ -197,20 +197,117 @@ body {
                     font-size: 1.563rem;
                     border-radius: 10px;
                     color: $third-color;
+                    transition: .7s;
                 }
                 span:hover {
                     opacity: .7;
                     backdrop-filter: blur(13px);
                 }
-               
-                
            }
           
         }
     }
-
-
-
     // galery end
+
+    // banner 1 start
+    .banner-1 {
+        margin-top: 200px;
+        display: flex;
+        gap: 100px;
+        .content-left {
+            background-color: $main-color;
+            display: flex;
+            padding-left: 50px;
+            justify-content: space-between;
+            padding-top: 50px;
+            max-width: 50%;
+            border-radius: 10px;
+            .contentLeft-wrapper {
+                .subHeading-content {
+                    @include subHeader-font;
+                    font-size: 20px;
+                    color: #fff;
+                }
+                .heading-content {
+                    @include header-font;
+                    color: $third-color;
+                    font-size: 50px;
+                }
+                .discon {
+                    @include subHeader-font;
+                    font-size: 25px;
+                    color: $third-color;
+                    margin-bottom: 50px;
+                }
+                a {
+                    padding: 16px 24px;
+                    background-color: $second-color;
+                    color: $main-color;
+                    @include header-font;
+                    font-size: 20px;
+                    border-radius: 10px;
+                }
+            }
+           
+            .image {
+                min-width: 340px;
+                max-height: 400px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .content-right {
+            .content-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 50px;
+                gap: 100px;
+                background-color: rgba(204, 204, 204, 0.3);
+                border-radius: 10px;
+                .heading-content {
+                    @include header-font;
+                    font-size: 36px;
+                    color: $main-color;
+                }
+                .discon {
+                    @include header-font;
+                    font-size: 40px;
+                    color: $main-color;
+                }
+                img {
+                    background-color: rgba(204, 204, 204, 0.3);
+                    border-radius: 0 10px 10px 0;
+                }
+            }
+            .content-bottom {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-right: 50px;
+                background-color: #ccc;
+                gap: 100px;
+                margin-top: 50px;
+                border-radius: 10px;
+                .heading-content {
+                    @include header-font;
+                    font-size: 36px;
+                    color: $main-color;
+                }
+                .discon {
+                    @include header-font;
+                    font-size: 40px;
+                    color: $main-color;
+                }
+                img {
+                    border-radius: 10px 0 0 10px;
+                }
+            }
+        }
+    }
+
+    // banner 1 end
 }
 
